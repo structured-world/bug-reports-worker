@@ -43,10 +43,10 @@ const SITES: Record<string, SiteConfig> = {
       "http://localhost:4173",
     ],
   },
-  "consent.sw.foundation": {
-    repo: "structured-world/consent",
+  "privacy.sw.foundation": {
+    repo: "structured-world/vue-privacy",
     allowedOrigins: [
-      "https://consent.sw.foundation",
+      "https://privacy.sw.foundation",
       "https://structured-world.github.io",
       "http://localhost:5173",
       "http://localhost:4173",

@@ -6,7 +6,7 @@ compatibility_date = "2024-12-01"
 # Routes for all documentation sites
 routes = [
   { pattern = "gitlab-mcp.sw.foundation/api/report-bug", zone_name = "sw.foundation" },
-  { pattern = "consent.sw.foundation/api/report-bug", zone_name = "sw.foundation" }
+  { pattern = "privacy.sw.foundation/api/report-bug", zone_name = "sw.foundation" }
 ]
 
 # KV namespace for rate limiting (shared)
