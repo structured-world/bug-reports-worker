@@ -1,0 +1,15 @@
+# Cloudflare Worker: Bug Reports for all sw.foundation docs sites
+name = "sw-bug-reports"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+# Routes for all documentation sites
+routes = [
+  { pattern = "gitlab-mcp.sw.foundation/api/report-bug", zone_name = "sw.foundation" },
+  { pattern = "consent.sw.foundation/api/report-bug", zone_name = "sw.foundation" }
+]
+
+# KV namespace for rate limiting (shared)
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "67e3b42cfafe492bbc8bbb17fe5c6b8b"
