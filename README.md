@@ -7,9 +7,21 @@ Cloudflare Worker for handling bug reports from all sw.foundation documentation 
 | Site | Repository |
 |------|------------|
 | gitlab-mcp.sw.foundation | structured-world/gitlab-mcp |
-| consent.sw.foundation | structured-world/consent |
+| privacy.sw.foundation | structured-world/vue-privacy |
 
 To add a new site, update `SITES` config in `src/index.ts` and add route in `wrangler.toml`.
+
+## Status
+
+**Internal tool** - handles bug reports from sw.foundation documentation sites only.
+
+| Feature | Status |
+|---------|--------|
+| Bug report submission | Done |
+| GitHub issue creation | Done |
+| Rate limiting (5/hour/IP) | Done |
+| Multi-site support | Done |
+| GitHub Actions deploy | Done |
 
 ## Architecture
 
