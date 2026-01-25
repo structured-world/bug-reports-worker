@@ -2,12 +2,24 @@
 
 Cloudflare Worker for handling bug reports from all sw.foundation documentation sites.
 
+## Status
+
+**Type**: Internal tool for sw.foundation docs sites.
+
+| Feature | Status |
+|---------|--------|
+| Bug report submission | Done |
+| GitHub issue creation | Done |
+| Rate limiting (5/hour/IP) | Done |
+| Multi-site support | Done |
+| GitHub Actions deploy | Done |
+
 ## Supported Sites
 
 | Site | Repository |
 |------|------------|
 | gitlab-mcp.sw.foundation | structured-world/gitlab-mcp |
-| consent.sw.foundation | structured-world/consent |
+| privacy.sw.foundation | structured-world/vue-privacy |
 
 To add a new site, update `SITES` config in `src/index.ts` and add route in `wrangler.toml`.
 
@@ -31,15 +43,15 @@ Creates issue in target repository
 
 ## Secrets Required
 
-Set via GitHub Actions secrets or `wrangler secret put`:
+Set via GitHub Actions secrets (org-level):
 
 | Secret | Description |
 |--------|-------------|
 | `CLOUDFLARE_API_TOKEN` | Cloudflare API token with Workers edit |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account ID |
-| `SW_RELEASE_BOT_APP_ID` | GitHub App ID |
-| `SW_RELEASE_BOT_PEM` | GitHub App private key (base64) |
-| `SW_RELEASE_BOT_INSTALLATION_ID` | GitHub App installation ID |
+| `RELEASER_APP_ID` | sw-release-bot App ID |
+| `RELEASER_APP_PRIVATE_KEY` | sw-release-bot private key (base64) |
+| `RELEASER_APP_INSTALLATION_ID` | sw-release-bot installation ID on org |
 
 ## Development
 
