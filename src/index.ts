@@ -414,7 +414,13 @@ ${expectedSection}
 ---
 *Reported via docs feedback widget*`;
 
-  const title = `[Docs] Bug report: ${report.page}`;
+  // Build title with description preview
+  // Note: report.description is already trimmed in validateReport()
+  const pageShort =
+    report.page.length > 30 ? report.page.slice(0, 30) + "..." : report.page;
+  const descriptionPreview = report.description.slice(0, 50);
+  const ellipsis = report.description.length > 50 ? "..." : "";
+  const title = `[Docs] ${pageShort}: ${descriptionPreview}${ellipsis}`;
 
   const response = await fetch(`https://api.github.com/repos/${repo}/issues`, {
     method: "POST",
