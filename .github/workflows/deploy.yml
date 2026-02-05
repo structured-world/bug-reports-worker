@@ -14,12 +14,13 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 22
+          cache: yarn
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install --immutable
 
       - name: Type check
-        run: npm run typecheck
+        run: yarn typecheck
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
