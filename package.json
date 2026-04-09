@@ -11,11 +11,11 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260317.1",
+    "@cloudflare/workers-types": "^4.20260402.1",
     "@eslint/js": "^10.0.1",
     "eslint": "^10.1.0",
     "typescript": "^6.0.2",
-    "typescript-eslint": "^8.57.2",
-    "wrangler": "^4.77.0"
+    "typescript-eslint": "^8.58.0",
+    "wrangler": "^4.80.0"
   }
 }
