@@ -52,6 +52,17 @@ const SITES: Record<string, SiteConfig> = {
       "http://localhost:4173",
     ],
   },
+  // CoordiNode docs — coordinode.com DNS is on PowerDNS (not Cloudflare),
+  // so we proxy API through this sw.foundation subdomain instead.
+  "coordinode-docs.sw.foundation": {
+    repo: "structured-world/coordinode",
+    allowedOrigins: [
+      "https://docs.coordinode.com",
+      "https://structured-world.github.io",
+      "http://localhost:5173",
+      "http://localhost:4173",
+    ],
+  },
 };
 
 const RATE_LIMIT_MAX = 5;
