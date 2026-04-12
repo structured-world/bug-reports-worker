@@ -6,7 +6,10 @@ compatibility_date = "2024-12-01"
 # Routes for all documentation sites
 routes = [
   { pattern = "gitlab-mcp.sw.foundation/api/report-bug", zone_name = "sw.foundation" },
-  { pattern = "privacy.sw.foundation/api/report-bug", zone_name = "sw.foundation" }
+  { pattern = "privacy.sw.foundation/api/report-bug", zone_name = "sw.foundation" },
+  # CoordiNode docs — coordinode.com DNS is on PowerDNS (not Cloudflare),
+  # so we proxy API through this sw.foundation subdomain instead.
+  { pattern = "coordinode-docs.sw.foundation/api/report-bug", zone_name = "sw.foundation" },
 ]
 
 # KV namespace for rate limiting (shared)
