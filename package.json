@@ -2,6 +2,8 @@
   "name": "sw-bug-reports-worker",
   "version": "1.0.0",
   "private": true,
+  "license": "Apache-2.0",
+  "author": "Dmitry Prudnikov <mail@polaz.com>",
   "packageManager": "yarn@4.13.0+sha512.5c20ba010c99815433e5c8453112165e673f1c7948d8d2b267f4b5e52097538658388ebc9f9580656d9b75c5cc996f990f611f99304a2197d4c56d21eea370e7",
   "type": "module",
   "scripts": {
@@ -13,9 +15,9 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260514.1",
     "@eslint/js": "^10.0.1",
-    "eslint": "^10.3.0",
+    "eslint": "^10.9.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.3",
+    "typescript-eslint": "^8.69.0",
     "wrangler": "^4.91.0"
   }
 }
