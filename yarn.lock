@@ -60,10 +60,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20260514.1":
-  version: 4.20260514.1
-  resolution: "@cloudflare/workers-types@npm:4.20260514.1"
-  checksum: 10c0/566d3e90605fddb7ba804fc686f04f4fa13788c7a56d95c78b10bec6b4c933273e0dc2b3e7b72713cf580ed569f1609684c7b1fd1d1ec5a8080a7a40497a2f24
+"@cloudflare/workers-types@npm:^5.20260907.1":
+  version: 5.20260907.1
+  resolution: "@cloudflare/workers-types@npm:5.20260907.1"
+  checksum: 10c0/19f6d503bf0c6b5642b75b4627da641ced7bbfbf1c6614ca3191b395db1a857f456a763d495180b097697fc48a350e77352251111d788577b90390e042b2b449
   languageName: node
   linkType: hard
 
@@ -2048,7 +2048,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sw-bug-reports-worker@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20260514.1"
+    "@cloudflare/workers-types": "npm:^5.20260907.1"
     "@eslint/js": "npm:^10.0.1"
     eslint: "npm:^10.9.1"
     typescript: "npm:^6.0.3"
